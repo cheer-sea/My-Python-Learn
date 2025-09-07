@@ -1,7 +1,8 @@
 ## 这个仓库用于记录python的学习历程，尝试python的一些特别东西，如类(Class)等等。
 
 ### 一、编程实践
-#### 1.1 类 (student_info.py) 
+#### 1.1 类的小实践 (student_info.py) 
+#### 1.2 类的继承算法 (my_class_inherit.py) 
 
 ### 二、总结收获
 类是python中非常重要的概念，类的变量和函数对应着我们现实生活的属性和行为，通过类可以更好的组织代码，贴切现实，提高代码的可读性和可维护性。
@@ -16,6 +17,24 @@
 
 这样就无需再手动赋值，对象的属性会直接被初始化。
 
+- **my_class_inherit.py** 文件中展示了类的继承算法，通过继承可以让子类拥有父类的所有属性和方法，并可以对父类进行扩展。
+``` 
+class Phone:
+    def __init__(selfprice):
+        self.price = price
+```
+上面这段代码定义了一个类 Phone，我们打算把它作为父类
+```
+class MyPhone(Phone):
+    def call_by_5g(self):
+        print('5G call')
+```
+上面这段代码定义了一个子类 MyPhone,它会继承父类 Phone 的所有属性和方法，并可以扩展，这里就新定义了一个方法 call_by_5g。
 
-
+假设我们已经定义了三个类， MyPhone, NFCReader, RemoteControl，我们也可以构建一个子类同时继承这三个（or可能更多）的父类，代码如下：
+```
+class A_Phone(Myphone, NFCReader, RemoteControl)
+    pass
+```
+其中，pass关键字的使用有利于解决语法错误，并表明该子类还未定义任何新东西。
 
