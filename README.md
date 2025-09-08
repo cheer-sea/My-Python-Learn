@@ -38,3 +38,4 @@ class A_Phone(Myphone, NFCReader, RemoteControl)
 ```
 其中，pass关键字的使用有利于解决语法错误，并表明该子类还未定义任何新东西。
 
+-**torch_data_read.py** 文件中尝试了读取数据，对pytorch中的 Dataset 进行实践
