@@ -17,5 +17,4 @@ for i in range(3):
     student = Student(name, age, grade)
     students.append(student)
     print(f'第{i+1}个学生信息录入完成，其姓名：{student.name}，年龄：{student.age}，成绩：{student.grade}')
-
     
